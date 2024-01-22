@@ -1,6 +1,6 @@
 import {StyleSheet, Dimensions} from 'react-native';
 
-const {width} = Dimensions.get('window');
+const {width, height} = Dimensions.get('window');
 
 const styles = StyleSheet.create({
   image: {
@@ -43,7 +43,8 @@ const styles = StyleSheet.create({
     top: 20,
     width: width - 20,
     marginHorizontal: 10,
-},
+    gap:10
+  },
   searchButtonText: {
     fontSize: 16,
     fontWeight: 'bold',
