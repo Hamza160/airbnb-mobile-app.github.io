@@ -11,6 +11,7 @@ import Post from './components/Post';
 import feed from './data/feed';
 import SearchResultsScreen from './screens/SearchResults';
 import DestinationSearchScreen from './screens/DestinationSearch';
+import GuestsScreen from './screens/Guests';
 
 const App = () => {
   return (
@@ -18,7 +19,8 @@ const App = () => {
       <StatusBar barStyle={'light-content'} />
       {/* <HomeScreen /> */}
       {/* <SearchResultsScreen /> */}
-      <DestinationSearchScreen />
+      {/* <DestinationSearchScreen /> */}
+      <GuestsScreen />
     </SafeAreaView>
   );
 };
