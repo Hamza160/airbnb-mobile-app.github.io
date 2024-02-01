@@ -4,7 +4,7 @@ import * as React from 'react';
 import styles from './styles';
 
 const GuestsScreen = () => {
-    const [counter, setCounter] = React.useState<number>(0);
+  const [counter, setCounter] = React.useState<number>(0);
   return (
     <View style={styles.container}>
       {/* Row 1: Adults */}
@@ -17,7 +17,9 @@ const GuestsScreen = () => {
         {/* Buttons with value */}
         <View style={styles.pressables}>
           <Pressable
-            onPress={() => setCounter(prevCounter => prevCounter - 1)}
+            onPress={() =>
+              setCounter(prevCounter => Math.max(0, prevCounter - 1))
+            }
             style={styles.button}>
             <Text style={styles.buttonText}>-</Text>
           </Pressable>
@@ -39,7 +41,9 @@ const GuestsScreen = () => {
         {/* Buttons with value */}
         <View style={styles.pressables}>
           <Pressable
-            onPress={() => setCounter(prevCounter => prevCounter - 1)}
+            onPress={() =>
+              setCounter(prevCounter => Math.max(0, prevCounter - 1))
+            }
             style={styles.button}>
             <Text style={styles.buttonText}>-</Text>
           </Pressable>
@@ -61,7 +65,9 @@ const GuestsScreen = () => {
         {/* Buttons with value */}
         <View style={styles.pressables}>
           <Pressable
-            onPress={() => setCounter(prevCounter => prevCounter - 1)}
+            onPress={() =>
+              setCounter(prevCounter => Math.max(0, prevCounter - 1))
+            }
             style={styles.button}>
             <Text style={styles.buttonText}>-</Text>
           </Pressable>
